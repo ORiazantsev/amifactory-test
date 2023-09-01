@@ -1,0 +1,47 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+$rubik: "Rubik", sans-serif;
+$krona: "Krona One", sans-serif;
+
+// colors
+$white: #ffffff;
+$black: #161616;
+$grey: #e2e2e2;
+$grey1: #a6a6a6;
+$grey2: #ffffff1a;
+$red: #da1617;
+$orange: #e98d4b;
+
+// gradients
+$blackGradient: linear-gradient(
+  180deg,
+  rgba(22, 22, 22, 0) 0%,
+  rgba(22, 22, 22, 0.89) 67.19%,
+  $black 100%
+);
+
+// mixins
+@mixin laptop {
+  @media only screen and (min-width: 1152px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media only screen and (max-width: 1151px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media only screen and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 399px) {
+    @content;
+  }
+}
